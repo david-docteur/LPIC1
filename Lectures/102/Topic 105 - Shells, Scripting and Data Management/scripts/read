@@ -1,0 +1,11 @@
+#!/bin/sh
+echo -n “Enter a username: “
+read name
+useradd -m $name
+passwd $name
+mkdir -p /shared/$name
+chown $name.users /shared/$name
+chmod 775 /shared/$name
+ln -s /shared/$name /home/$name/shared
+chown $name.users /home/$name/shared
+

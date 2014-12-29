@@ -1,0 +1,10 @@
+#!/bin/bash
+for file in `ls *.txt` ; do
+echo -n “Display $file? “
+read answer
+if [ $answer == ‘y’ ]
+then
+less $file
+fi
+done
+

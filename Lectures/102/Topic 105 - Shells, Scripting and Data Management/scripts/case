@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#Initialise word variable
+word=deux
+
+#switch case on word
+case $word in
+	un) echo "un" ;;
+	deux) echo "deux" ;;
+esac

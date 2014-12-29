@@ -1,0 +1,14 @@
+#/bin/bash
+doit() {
+cp $1 $2
+}
+function check() {
+if [ -s $2 ]
+then
+echo “Target file exists! Exiting!”
+exit
+fi
+}
+check $1 $2
+doit $1 $2
+

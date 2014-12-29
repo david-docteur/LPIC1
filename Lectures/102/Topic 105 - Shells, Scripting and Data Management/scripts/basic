@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# shebang refers to current system shell
+# then, launch several commands
+
+/usr/bin/xterm&
+/usr/bin/xterm&
+xcalc&
+
+# the & (ampersand) character means than
+# the next line is executed, even if the previous one
+# hasn't completed

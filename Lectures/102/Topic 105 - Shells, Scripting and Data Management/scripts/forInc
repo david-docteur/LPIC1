@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Loop from 1 to 10 while setting $x
+for x in `seq 1 10`; do
+	echo "x value is :" $x;
+done
